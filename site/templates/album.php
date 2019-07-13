@@ -1,39 +1,69 @@
 <?php snippet('header') ?>
 
-<main class="album">
-  <article>
+<main class="wrap_single_project">
 
-    <header>
-      <?php if ($cover = $page->cover()): ?>
-      <figure class="album-cover">
-        <?= $cover->crop(1024, 768) ?>
-        <figcaption>
-          <h1><?= $page->headline()->or($page->title()) ?></h1>
-        </figcaption>
-      </figure>
-      <?php endif ?>
-    </header>
+  <div class="marquee marquee_top">
+      <span><?= $page->title() ?></span>
+      <span><?= $page->title() ?></span>
+      <span><?= $page->title() ?></span>
+      <span><?= $page->title() ?></span>
+      <span><?= $page->title() ?></span>
+      <span><?= $page->title() ?></span>
+      <span><?= $page->title() ?></span>
+  </div>
 
-    <div class="album-text text">
-      <?= $page->description()->kt() ?>
 
-      <?php if ($page->tags()->isNotEmpty()): ?>
-      <p class="album-tags tags"><?= $page->tags() ?></p>
-      <?php endif ?>
-    </div>
+  <div class="marquee marquee_left">
+      <span><?= $page->title() ?></span>
+      <span><?= $page->title() ?></span>
+      <span><?= $page->title() ?></span>
+      <span><?= $page->title() ?></span>
+      <span><?= $page->title() ?></span>
+      <span><?= $page->title() ?></span>
+      <span><?= $page->title() ?></span>
+  </div>
 
-    <ul class="album-gallery"<?= attr(['data-even' => $gallery->isEven(), 'data-count' => $gallery->count()], ' ') ?>>
+  <div class="marquee marquee_right">
+      <span><?= $page->title() ?></span>
+      <span><?= $page->title() ?></span>
+      <span><?= $page->title() ?></span>
+      <span><?= $page->title() ?></span>
+      <span><?= $page->title() ?></span>
+      <span><?= $page->title() ?></span>
+      <span><?= $page->title() ?></span>
+  </div>
+
+
+  <div class="single_project_images">
+
+    <ul class=""<?= attr(['data-count' => $gallery->count()], ' ') ?>>
       <?php foreach ($gallery as $image): ?>
       <li>
-        <figure>
-          <a href="<?= $image->link()->or($image->url()) ?>">
-            <?= $image->crop(800, 1000) ?>
-          </a>
-        </figure>
+          <?= $image ?>
       </li>
       <?php endforeach ?>
+      <li class="next_project"> 
+
+        <?php if($next = $page->next()): ?>
+
+          <img  src="<?php echo $page->next()->image()->url() ?>">
+        <a href="<?= $next->url() ?>">
+          Next Project<br>
+          <?= $next->title() ?>
+        </a>
+        <?php else: ?>
+          <a href="<?= page('projects')->children()->first()->url() ?>">
+            Next Projectx<br>
+            <?= page('projects')->children()->first()->title() ?>
+          </a>
+        <?php endif ?>
+
+
+      </li>
     </ul>
-  </article>
+
+  </div>
+
 </main>
 
 <?php snippet('footer') ?>

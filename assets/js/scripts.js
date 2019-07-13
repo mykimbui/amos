@@ -62,7 +62,7 @@
 
 	/////// open work menu ///////
 	$('.nav_work').click(function() {
-		$('.header').toggleClass('show_menu');
+		$('.page').toggleClass('show_menu');
 	})
 	//
 	// close work menu if clicked anywhere on website //
@@ -71,3 +71,50 @@
 /***/
 
 
+	/////// scroll down = scroll right  ///////
+	$(document).ready(function() {
+		$('.single_project_images ul').mousewheel(function(e, delta) {
+			this.scrollLeft -= (delta);
+			e.preventDefault();
+		});
+	});
+
+	$( ".single_project_images ul" ).scroll(function() {
+
+		var scrollLeft = $('.single_project_images ul').scrollLeft()
+
+		var scrollWidth = $('.single_project_images ul')[0].scrollWidth - $('.single_project_images ul').innerWidth();
+		
+		var scroll_from_right = scrollWidth - scrollLeft;
+
+		console.log(scroll_from_right)
+		
+		
+		if (scroll_from_right > 100) {
+			$('.marquee_right').css('right', -100)
+		} else {
+			$('.marquee_right').css('right', -scroll_from_right)
+		}
+
+
+		if (scrollLeft > 100) {
+			$('.marquee_left').css('left', -100)
+		} else {
+			$('.marquee_left').css('left', -scrollLeft)
+		}
+
+
+
+	});
+
+
+/****/
+
+	////// hover next project //////
+	$('.next_project a').hover(
+	  function() {
+	  	$(this).prev('img').addClass('show');
+	  }, function() {
+	    $(this).prev('img').removeClass('show');
+	  }
+	);

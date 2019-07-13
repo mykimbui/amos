@@ -23,7 +23,7 @@
         Works
         <div class="works_menu">
           <ul>
-            <?php $count = 0; foreach ($page->children()->listed() as $album): ?>
+            <?php $count = 0;  foreach (page('projects')->children()->listed() as $album): ?>
               <li>
               <a class="" data-index="<?php echo $count ?>" href="<?= $album->url() ?>">
                 <span><?= $album->title() ?></span>
@@ -33,7 +33,7 @@
           </ul>
         </div>
       </div>
-      <div class="nav_link"><a class="logo" href="<?= $site->url() ?>">Amos <span class="middle_name">Abel</span> <span class="last_name"> Yong</span> </a></div>
+      <div class="nav_link nav_logo"><a class="logo" href="<?= $site->url() ?>">Amos <span class="middle_name">Abel</span> <span class="last_name"> Yong</span> </a></div>
       <div class="nav_link"><a href="<?= $site->page('about')->url() ?>">About</a></div>
     </header>
 

@@ -5,9 +5,9 @@
     <h1><?= $site->title() ?></h1>
   </header>
 
-  <?php if ($photographyPage = page('photography')): ?>
+  <?php if ($projectsPage = page('projects')): ?>
   <ul class="grid">
-    <?php foreach ($photographyPage->children()->listed() as $album): ?>
+    <?php foreach ($projectsPage->children()->listed() as $album): ?>
     <li>
       <a href="<?= $album->url() ?>">
         <figure>

@@ -346,6 +346,30 @@ header .nav_link {
   margin-bottom: .75rem;
 }
 
+.wrap_about {
+    display: flex;
+    position: fixed;
+    top: 31.2vh;
+    /*transform: translateY(-50%);*/
+    left: 11.3vw;
+}
+.wrap_about .text {
+    width: 38vw;
+    font-size: 1.667vw;
+    line-height: 2.6667vw;
+}
+.wrap_about .text:first-child {
+  margin-right: 9.2vw;
+}
+.wrap_about .text a {
+  transition: 0.2s opacity ease-in-out;
+}
+.wrap_about .text a:hover {
+  opacity: 0.5;
+}
+.wrap_about p {
+  margin-bottom: 2.8vw;
+}
 
 
 @media (max-width: 1280px) { 

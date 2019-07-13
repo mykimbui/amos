@@ -1,51 +1,53 @@
 <?php snippet('header') ?>
 
 <main>
-  <header class="intro">
+  <!-- <header class="intro">
     <h1><?= $page->title() ?></h1>
-  </header>
+  </header> -->
 
-  <div class="layout">
 
-    <aside>
-      <section>
-        <h2>Address</h2>
-        <div class="text">
-          <?= $page->address()->kt() ?>
-        </div>
-      </section>
+  <div class="marquee marquee_top">
+      <span>Amos Abel Yong</span>
+      <span>Amos Abel Yong</span>
+      <span>Amos Abel Yong</span>
+      <span>Amos Abel Yong</span>
+      <span>Amos Abel Yong</span>
+      <span>Amos Abel Yong</span>
+      <span>Amos Abel Yong</span>
+  </div>
 
-      <section>
-        <h2>Email</h2>
-        <div class="text">
-          <?= html::email($page->email()) ?>
-        </div>
-      </section>
 
-      <section>
-        <h2>Phone</h2>
-        <div class="text">
-          <?= html::tel($page->phone()) ?>
-        </div>
-      </section>
+  <div class="marquee marquee_left">
+      <span>Amos Abel Yong</span>
+      <span>Amos Abel Yong</span>
+      <span>Amos Abel Yong</span>
+      <span>Amos Abel Yong</span>
+      <span>Amos Abel Yong</span>
+      <span>Amos Abel Yong</span>
+      <span>Amos Abel Yong</span>
+  </div>
 
-      <section>
-        <h2>On the web</h2>
-        <div class="text">
-          <ul>
-            <?php foreach ($page->social()->toStructure() as $social): ?>
-            <li><?= html::a($social->url(), $social->platform()) ?></li>
-            <?php endforeach ?>
-          </ul>
-        </div>
-      </section>
+  <div class="marquee marquee_right">
+      <span>Amos Abel Yong</span>
+      <span>Amos Abel Yong</span>
+      <span>Amos Abel Yong</span>
+      <span>Amos Abel Yong</span>
+      <span>Amos Abel Yong</span>
+      <span>Amos Abel Yong</span>
+      <span>Amos Abel Yong</span>
+  </div>
 
-    </aside>
 
+  <div class="wrap_about">
     <div class="text">
       <?= $page->text()->kt() ?>
     </div>
+
+    <div class="text">
+      <?= $page->text2()->kt() ?>
+    </div>
   </div>
+
 </main>
 
 <?php snippet('footer') ?>

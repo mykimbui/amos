@@ -271,8 +271,11 @@ header .nav_link {
     display: block;
     top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     text-align: center;
+    mix-blend-mode: overlay;
+    font-size: 24px;
+    line-height: 1.4;
 }
 .next_project img {
   padding: 17.5vh 19.2vw;

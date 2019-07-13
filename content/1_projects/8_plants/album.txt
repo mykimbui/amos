@@ -1,6 +1,8 @@
-Cover: 
+Title: Garnier
 
-- nice-colors-ugly-plant.jpg
+----
+
+Cover: - nice-colors-ugly-plant.jpg
 
 ----
 
@@ -13,7 +15,3 @@ Description: They call me Dr. Greenthumb.
 ----
 
 Tags: plants
-
-----
-
-Title: Plants

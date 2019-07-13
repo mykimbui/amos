@@ -1,10 +1,8 @@
-Title: Sky
+Title: L'Oreal Paris
 
 ----
 
-Cover: 
-
-- dark-forest.jpg
+Cover: - dark-forest.jpg
 
 ----
 

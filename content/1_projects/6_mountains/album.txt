@@ -1,6 +1,8 @@
-Cover: 
+Title: Sephora
 
-- probably-photoshopped.jpg
+----
+
+Cover: - probably-photoshopped.jpg
 
 ----
 
@@ -13,7 +15,3 @@ Description: Mountains — where do they come from.
 ----
 
 Tags: mountains, peak nature
-
-----
-
-Title: Mountains

@@ -7,19 +7,33 @@
 
   <title> <?= $page->title() ?> – <?= $site->title() ?></title>
 
-  <?= css(['assets/css/index.css', '@auto']) ?>
+
+  <?= css(['assets/css/custom.css']) ?>
 
 </head>
 <body>
 
-  <div class="page">
-    <header class="header">
-      <a class="logo" href="<?= $site->url() ?>"><?= $site->title() ?></a>
+  <img class="grid" src="<?= $kirby->url('assets') ?>/media/grid.jpg">
 
-      <nav id="menu" class="menu">
-        <?php foreach ($site->children()->listed() as $item): ?>
-        <?= $item->title()->link() ?>
-        <?php endforeach ?>
-      </nav>
+  <div class="page">
+
+
+    <header class="header">
+      <div class="nav_link nav_work">
+        Works
+        <div class="works_menu">
+          <ul>
+            <?php $count = 0; foreach ($page->children()->listed() as $album): ?>
+              <li>
+              <a class="" data-index="<?php echo $count ?>" href="<?= $album->url() ?>">
+                <span><?= $album->title() ?></span>
+              </a>
+              </li>
+            <?php $count++; endforeach ?>
+          </ul>
+        </div>
+      </div>
+      <div class="nav_link"><a class="logo" href="<?= $site->url() ?>">Amos <span class="middle_name">Abel</span> <span class="last_name"> Yong</span> </a></div>
+      <div class="nav_link"><a href="<?= $site->page('about')->url() ?>">About</a></div>
     </header>
 

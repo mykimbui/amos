@@ -1,6 +1,8 @@
-Cover: 
+Title: Ashley Isham
 
-- the-fall-is-lava.jpg
+----
+
+Cover: - the-fall-is-lava.jpg
 
 ----
 
@@ -13,7 +15,3 @@ Description: Don't go chasing waterfalls
 ----
 
 Tags: water, falls, down
-
-----
-
-Title: Waterfall

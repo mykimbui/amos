@@ -22,7 +22,7 @@ Represented by Calibre Pictures & Ideas
 
 (email: hello@ahmoo.se text: hello@ahmoo.se)
 +65 9770 3031
-(link: http://instagram.com/ahmoose text: @ahmoose)
+(link: http://instagram.com/ahmoose text: @ahmoose target: _blank)
 
 ----
 

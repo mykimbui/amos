@@ -1,10 +1,11 @@
 <?php snippet('header') ?>
 
-<main>
+<div data-barba="wrapper">
+<main data-barba="container" data-barba-namespace="projects">
 
   <div class="marquee marquee_top">
     <?php $count = 0; foreach ($page->children()->listed() as $album): ?>
-      <a class="project_link" data-index="<?php echo $count ?>" href="<?= $album->url() ?>">
+      <a class="project_link" data-hover="<?= $album->hovercolor() ?>" data-index="<?php echo $count ?>" href="<?= $album->url() ?>">
         <span><?= $album->title() ?></span>
       </a>
     <?php $count++; endforeach ?>
@@ -13,7 +14,7 @@
 
   <div class="marquee marquee_left">
     <?php $count = 0; foreach ($page->children()->listed() as $album): ?>
-      <a class="project_link" data-index="<?php echo $count ?>" href="<?= $album->url() ?>">
+      <a class="project_link" data-hover="<?= $album->hovercolor() ?>" data-index="<?php echo $count ?>" href="<?= $album->url() ?>">
         <span><?= $album->title() ?></span>
       </a>
     <?php $count++; endforeach ?>
@@ -21,14 +22,14 @@
 
   <div class="marquee marquee_right">
     <?php $count = 0; foreach ($page->children()->listed() as $album): ?>
-      <a class="project_link" data-index="<?php echo $count ?>" href="<?= $album->url() ?>">
+      <a class="project_link" data-hover="<?= $album->hovercolor() ?>" data-index="<?php echo $count ?>" href="<?= $album->url() ?>">
         <span><?= $album->title() ?></span>
       </a>
     <?php $count++; endforeach ?>
   </div>
 
 
-  <div class="projects_showcase">
+  <div class="projects_showcase" <?= attr(['data-count' => $page->children()->count()], ' ') ?>>
     <ul>
     <?php $count = 0; foreach ($page->children()->listed() as $album): ?>
     <li class="project_image project_<?php echo $count ?>">
@@ -57,5 +58,7 @@
     <?php endforeach ?>
   </ul> -->
 </main>
+
+</div>
 
 <?php snippet('footer') ?>

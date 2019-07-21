@@ -2,7 +2,9 @@ Title: L'Oreal Paris
 
 ----
 
-Cover: - dark-forest.jpg
+Cover:
+
+- coconut-milkyway.jpg
 
 ----
 
@@ -11,6 +13,10 @@ Headline: Stars and the universe and so on
 ----
 
 Description: 
+
+----
+
+Hovercolor: #ffe500
 
 ----
 

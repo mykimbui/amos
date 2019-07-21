@@ -1,6 +1,7 @@
 <?php snippet('header') ?>
 
-<main class="wrap_single_project">
+<div data-barba="wrapper">
+<main class="wrap_single_project" data-barba="container" data-barba-namespace="project">
 
   <div class="marquee marquee_top">
       <span><?= $page->title() ?></span>
@@ -37,23 +38,26 @@
   <div class="single_project_images">
 
     <ul class=""<?= attr(['data-count' => $gallery->count()], ' ') ?>>
-      <?php foreach ($gallery as $image): ?>
-      <li>
+      <?php $count = 0; foreach ($gallery as $image): ?>
+
+   
+      <li  class="project_image_<?php echo $count  ?>">
           <?= $image ?>
       </li>
-      <?php endforeach ?>
+      <?php $count++; endforeach ?>
       <li class="next_project"> 
 
         <?php if($next = $page->next()): ?>
 
-          <img  src="<?php echo $page->next()->image()->url() ?>">
-        <a href="<?= $next->url() ?>">
+        <img class="blur" src="<?php echo $page->next()->cover()->url() ?>">
+        <a class="to_next" href="<?= $next->url() ?>">
           Next Project<br>
           <?= $next->title() ?>
         </a>
         <?php else: ?>
-          <a href="<?= page('projects')->children()->first()->url() ?>">
-            Next Projectx<br>
+          <img class="blur" src="<?= page('projects')->children()->first()->cover()->url() ?>">
+          <a class="to_next" href="<?= page('projects')->children()->first()->url() ?>">
+            Next Project<br>
             <?= page('projects')->children()->first()->title() ?>
           </a>
         <?php endif ?>
@@ -65,5 +69,6 @@
   </div>
 
 </main>
+</div>
 
 <?php snippet('footer') ?>

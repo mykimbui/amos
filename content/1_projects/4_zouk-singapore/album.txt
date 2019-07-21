@@ -2,7 +2,9 @@ Title: Zouk Singapore
 
 ----
 
-Cover: - island-from-above.jpg
+Cover:
+
+- island-from-above.jpg
 
 ----
 
@@ -11,6 +13,10 @@ Headline: Oceans are quite nice
 ----
 
 Description: Blue with lots of fish
+
+----
+
+Hovercolor: #d3ff00
 
 ----
 

@@ -2,7 +2,9 @@ Title: Garnier
 
 ----
 
-Cover: - nice-colors-ugly-plant.jpg
+Cover:
+
+- between-the-ferns.jpg
 
 ----
 
@@ -11,6 +13,10 @@ Headline:
 ----
 
 Description: They call me Dr. Greenthumb.
+
+----
+
+Hovercolor: #d3ff00
 
 ----
 

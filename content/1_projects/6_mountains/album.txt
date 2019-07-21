@@ -2,7 +2,9 @@ Title: Sephora
 
 ----
 
-Cover: - probably-photoshopped.jpg
+Cover:
+
+- climbers-are-crazy.jpg
 
 ----
 
@@ -11,6 +13,10 @@ Headline: Mountains are pretty big
 ----
 
 Description: Mountains — where do they come from.
+
+----
+
+Hovercolor: #1500ff
 
 ----
 

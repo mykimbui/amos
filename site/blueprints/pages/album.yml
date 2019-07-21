@@ -28,4 +28,8 @@ columns:
         type: text
       description:
         type: textarea
+      hovercolor:
+        label: Hover Color
+        type: text
+        placeholder : '#000000'
       tags: true

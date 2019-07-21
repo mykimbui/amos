@@ -2,7 +2,9 @@ Title: Skin Inc.
 
 ----
 
-Cover: - indiana-jones.jpg
+Cover:
+
+- indiana-jones.jpg
 
 ----
 
@@ -11,6 +13,10 @@ Headline: The desert is pretty hot
 ----
 
 Description: 
+
+----
+
+Hovercolor: #ff0000
 
 ----
 

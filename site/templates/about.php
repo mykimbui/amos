@@ -1,6 +1,8 @@
 <?php snippet('header') ?>
 
-<main>
+
+<div data-barba="wrapper">
+<main data-barba="container" data-barba-namespace="about">
   <!-- <header class="intro">
     <h1><?= $page->title() ?></h1>
   </header> -->
@@ -50,4 +52,5 @@
 
 </main>
 
+</div>
 <?php snippet('footer') ?>

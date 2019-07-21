@@ -2,7 +2,9 @@ Title: Ashley Isham
 
 ----
 
-Cover: - the-fall-is-lava.jpg
+Cover:
+
+- lots-of-water.jpg
 
 ----
 
@@ -11,6 +13,10 @@ Headline: Water that falls
 ----
 
 Description: Don't go chasing waterfalls
+
+----
+
+Hovercolor: #ffe500
 
 ----
 

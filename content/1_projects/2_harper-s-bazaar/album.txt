@@ -2,7 +2,9 @@ Title: Harper's Bazaar
 
 ----
 
-Cover: - peter-fox.jpg
+Cover:
+
+- bird-reynolds.jpg
 
 ----
 
@@ -11,6 +13,10 @@ Headline: Animals as leaders
 ----
 
 Description: What does the fox say?
+
+----
+
+Hovercolor: #1500ff
 
 ----
 

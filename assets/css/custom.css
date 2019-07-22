@@ -197,7 +197,7 @@ header > div {
     position: absolute;
     bottom: 12.8vh;
     /*max-height: calc(100vh - 12.8vh - var(--marquee-height));*/
-    max-height: calc(100vh - 12.8vh - var(--marquee-height) - 8.1vh) ;
+    max-height: calc(100vh - 12.8vh - var(--marquee-height) - 7vh) ;
     width: 100%;
     opacity: 0;
     pointer-events: none;
@@ -211,6 +211,11 @@ header > div {
 }
 .works_menu li {
     margin-bottom: 2.6vh;
+    opacity: 0;
+    transition: 0.4s ease-in-out opacity;
+}
+.show_menu .works_menu li {
+  opacity: 1;
 }
 .works_menu li:last-child {
   margin-bottom: 0;

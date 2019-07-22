@@ -62,8 +62,13 @@
 		// scrolling up down equates to scrolling left right too  ///////
 		$(document).ready(function() {
 			$('.single_project_images ul').mousewheel(function(e, delta) {
-				this.scrollLeft -= (delta);
-				e.preventDefault();
+
+				console.log($(this).hasClass('no_scroll'))
+				if ( !$(this).hasClass('no_scroll') ) {
+					this.scrollLeft -= (delta);
+					e.preventDefault();	
+				}
+				
 			});
 		});
 		//
@@ -207,6 +212,9 @@
 		      console.log('fired project-to-project via to_next');
 		      var done = this.async();
 		      
+		      // temporarily disable scrolling
+		      $('.single_project_images ul').addClass('no_scroll')
+
 		      // 1 - remove blur on next project image
 		      $('.next_project img').removeClass('blur');
 		      // 2 - scroll to extreme left if havent already (to align images on transition)
@@ -256,6 +264,10 @@
 		    enter: function(data) {
 		      var done = this.async();
 		      init_site();
+
+		      // temporarily disable scrolling
+		      $('.single_project_images ul').addClass('no_scroll');
+
 		      TweenMax.to('.marquee', 0., {
 		        opacity: 1
 		      });
@@ -278,6 +290,9 @@
 		      TweenMax.to('.single_project_images li', 0.6, {
 		        opacity: 1,
 		        delay:1.6,
+		        onComplete: function(){
+		        	$('.single_project_images ul').removeClass('no_scroll');
+            	}
 		      });
 
 		    },

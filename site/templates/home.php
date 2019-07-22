@@ -5,7 +5,7 @@
     <h1><?= $site->title() ?></h1>
   </header>
 
-  <?php if ($projectsPage = page('projects')): ?>
+  <?php if ($projectsPage = page('works')): ?>
   <ul class="grid">
     <?php foreach ($projectsPage->children()->listed() as $album): ?>
     <li>

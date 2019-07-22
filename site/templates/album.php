@@ -55,10 +55,10 @@
           <?= $next->title() ?>
         </a>
         <?php else: ?>
-          <img class="blur" src="<?= page('projects')->children()->first()->cover()->url() ?>">
-          <a class="to_next" href="<?= page('projects')->children()->first()->url() ?>">
+          <img class="blur" src="<?= page('works')->children()->first()->cover()->url() ?>">
+          <a class="to_next" href="<?= page('works')->children()->first()->url() ?>">
             Next Project<br>
-            <?= page('projects')->children()->first()->title() ?>
+            <?= page('works')->children()->first()->title() ?>
           </a>
         <?php endif ?>
 

@@ -25,8 +25,8 @@
         <span class="label">Works</span>
         <div class="works_menu">
           <ul>
-            <?php $count = 0;  foreach (page('projects')->children()->listed() as $album): ?>
-              <li>
+            <?php $count = 0;  foreach (page('works')->children()->listed() as $album): ?>
+              <li style="transition-delay: <?php echo (page('works')->children()->count() - $count) / 20 ?>s">
               <a class="works_menu_a" data-index="<?php echo $count ?>" href="<?= $album->url() ?>">
                 <span><?= $album->title() ?></span>
               </a>

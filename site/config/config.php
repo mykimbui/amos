@@ -2,7 +2,7 @@
 
 return [
     'debug' => true,
-    'home' => 'projects'
+    'home' => 'works'
 ];
 
 

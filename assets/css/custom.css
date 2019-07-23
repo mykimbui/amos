@@ -569,7 +569,7 @@ header > div {
     opacity: 1 !important;
   }
   .next_project img.blur {
-    filter: blur(15px);
+    filter: blur(5px);
   }
   .next_project a {
     top:46.2vh;

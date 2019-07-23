@@ -29,7 +29,7 @@
   box-sizing: border-box;
 }
 * {
-  cursor: none !important; 
+  cursor: none ; 
 }
 
 html {
@@ -43,7 +43,7 @@ li {
 a {
   color: currentColor;
   text-decoration: none;
-  cursor: pointer;
+  /*cursor: pointer;*/
 }
 a.disabled {
   pointer-events: none !important;
@@ -95,7 +95,7 @@ header > div {
   user-select: none; 
 }
 .nav_work {
-  cursor: pointer;
+  /*cursor: pointer;*/
 }
 
 .mobile_menu_trigger {
@@ -479,12 +479,12 @@ header > div {
     display: none;
   }
   * {
-    cursor: auto !important; 
+    cursor: auto; 
   }
 
 }
 
-@media (max-width: 420px) { 
+@media (max-width: 510px) { 
 
   :root {
     --content-width: 65rem;
@@ -573,6 +573,9 @@ header > div {
   }
   .next_project a {
     top:46.2vh;
+  }
+  .nav_work *, .nav_work label *{
+    cursor: pointer !important;
   }
 
 }

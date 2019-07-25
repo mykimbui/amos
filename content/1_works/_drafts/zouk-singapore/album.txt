@@ -1,0 +1,21 @@
+Title: Dior
+
+----
+
+Cover: - island-from-above.jpg
+
+----
+
+Headline: Oceans are quite nice
+
+----
+
+Description: Blue with lots of fish
+
+----
+
+Hovercolor: #d3ff00
+
+----
+
+Tags: ocean, water, blue

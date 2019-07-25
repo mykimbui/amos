@@ -7,6 +7,7 @@
   'assets/js/jquery.mousewheel.min.js',
   'assets/js/jquery.marquee.js',
   'assets/js/barba.js',
+  'assets/js/instafeed.js',
   'assets/js/tweenmax.cssplugin.js',
   'assets/js/scripts.js',
 

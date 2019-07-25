@@ -1,0 +1,23 @@
+Title: Garnier
+
+----
+
+Cover:
+
+- lcse_2-c.jpg
+
+----
+
+Headline: 
+
+----
+
+Description: 
+
+----
+
+Hovercolor: #e8cd42
+
+----
+
+Tags: 

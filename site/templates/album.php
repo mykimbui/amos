@@ -34,38 +34,43 @@
       <span><?= $page->title() ?></span>
   </div>
 
+  <div class="wrap_projects_scroller">
+    <div class="single_project_images">
 
-  <div class="single_project_images">
+      <ul class=""<?= attr(['data-count' => $gallery->count()], ' ') ?>>
+        <?php $count = 0; foreach ($gallery as $image): ?>
 
-    <ul class=""<?= attr(['data-count' => $gallery->count()], ' ') ?>>
-      <?php $count = 0; foreach ($gallery as $image): ?>
+     
+        <li  class="project_image_<?php echo $count  ?>">
+            <?= $image ?>
+        </li>
+        <?php $count++; endforeach ?>
+        <li class="next_project"> 
 
-   
-      <li  class="project_image_<?php echo $count  ?>">
-          <?= $image ?>
-      </li>
-      <?php $count++; endforeach ?>
-      <li class="next_project"> 
+          <?php if($next = $page->next()): ?>
 
-        <?php if($next = $page->next()): ?>
-
-        <img class="blur" src="<?php echo $page->next()->cover()->url() ?>">
-        <a class="to_next" href="<?= $next->url() ?>">
-          Next Project<br>
-          <?= $next->title() ?>
-        </a>
-        <?php else: ?>
-          <img class="blur" src="<?= page('works')->children()->first()->cover()->url() ?>">
-          <a class="to_next" href="<?= page('works')->children()->first()->url() ?>">
-            Next Project<br>
-            <?= page('works')->children()->first()->title() ?>
+          <img class="blur" src="<?php echo $page->next()->cover()->url() ?>">
+          <a class="to_next" href="<?= $next->url() ?>">
+            Next Work<br>
+            <?= $next->title() ?>
           </a>
-        <?php endif ?>
+          <?php else: ?>
+            <img class="blur" src="<?= page('works')->children()->first()->cover()->url() ?>">
+            <a class="to_next" href="<?= page('works')->children()->first()->url() ?>">
+              Next Project<br>
+              <?= page('works')->children()->first()->title() ?>
+            </a>
+          <?php endif ?>
 
 
-      </li>
-    </ul>
+        </li>
+      </ul>
 
+    </div>
+  </div><!--/.wrap_projects_scroller-->
+
+  <div class="expander">
+    <img src="">
   </div>
 
 </main>

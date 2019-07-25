@@ -27,7 +27,7 @@
           <ul>
             <?php $count = 0;  foreach (page('works')->children()->listed() as $album): ?>
               <li style="transition-delay: <?php echo (page('works')->children()->count() - $count) / 20 ?>s">
-              <a class="works_menu_a" data-index="<?php echo $count ?>" href="<?= $album->url() ?>">
+              <a class="works_menu_a" data-hover="<?= $album->hovercolor() ?>" data-index="<?php echo $count ?>" href="<?= $album->url() ?>">
                 <span><?= $album->title() ?></span>
               </a>
               </li>
@@ -41,3 +41,16 @@
       <div class="nav_link nav_about"><a class="nav_about_a" href="<?= $site->page('about')->url() ?>">About</a></div>
     </header>
 
+<!-- 
+    <div class="projects_showcase" <?= attr(['data-count' => page('works')->children()->count()], ' ') ?>>
+      <ul>
+      <?php $count = 0; foreach (page('works')->children()->listed() as $album): ?>
+      <li class="project_image project_<?php echo $count ?>">
+          <?php if ($cover = $album->cover()): ?>
+          <?= $cover ?>
+          <?php endif ?>
+      </li>
+
+      <?php $count++; endforeach ?>
+      </ul>
+    </div> -->

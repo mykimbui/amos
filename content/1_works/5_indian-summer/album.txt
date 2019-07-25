@@ -1,0 +1,23 @@
+Title: Indian Summer
+
+----
+
+Cover:
+
+- ksenia-250.jpg
+
+----
+
+Headline: Water that falls
+
+----
+
+Description: Don't go chasing waterfalls
+
+----
+
+Hovercolor: #4c0206
+
+----
+
+Tags: water, falls, down

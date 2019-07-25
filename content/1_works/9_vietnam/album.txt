@@ -1,0 +1,21 @@
+Title: Mui Ne
+
+----
+
+Cover: - ams3254.jpg
+
+----
+
+Headline: Mountains are pretty big
+
+----
+
+Description: Mountains — where do they come from.
+
+----
+
+Hovercolor: #d5a67e
+
+----
+
+Tags: mountains, peak nature

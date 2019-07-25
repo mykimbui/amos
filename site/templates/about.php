@@ -50,6 +50,13 @@
     </div>
   </div>
 
+  <div class="wrap_instagram">
+    <ul id="instafeed">
+    </ul>
+  </div>
+
+  <div class="instagram_clicker"></div>
+
 </main>
 
 </div>

@@ -1,0 +1,31 @@
+Title: Maybelline
+
+----
+
+Cover:
+
+- ao_7_mascara_b2.jpg
+
+----
+
+Headline: Product shots for Maybelline
+
+----
+
+Description: Hug them if you like. They might not appreciate it though.
+
+----
+
+Hovercolor: #616161
+
+----
+
+Tags: 
+
+----
+
+Hover-color: 
+
+----
+
+Color: 
